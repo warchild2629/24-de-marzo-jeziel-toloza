@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24 de Marzo | E.E.S.T. N°3 - Memoria, Verdad y Justicia</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter & Merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        institutional: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            800: '#0f172a',
+                            900: '#020617',
+                        },
+                        memory: {
+                            accent: '#38bdf8',
+                            dark: '#0f172a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .memory-pattern {
+            background-color: #020617;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 0);
+            background-size: 28px 28px;
+        }
+        .panuelo-glow {
+            filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.25));
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-slate-800 selection:text-white">
+
+    <!-- Header / Navbar Institucional -->
+    <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800 text-white transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Identidad Institucional -->
+                <a href="#inicio" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center text-white font-bold group-hover:border-slate-500 transition">
+                        <i class="fa-solid fa-ribbon text-slate-200"></i>
+                    </div>
+                    <div>
+                        <span class="block text-xs uppercase tracking-wider text-slate-400 font-semibold">Comunidad Educativa</span>
+                        <span class="block text-base font-bold text-white leading-tight">E.E.S.T. N°3</span>
+                    </div>
+                </a>
+
+                <!-- Navegación -->
+                <nav class="hidden lg:flex space-x-6 text-sm font-medium">
+                    <a href="#historia" class="hover:text-amber-400 transition">¿Por qué el 24M?</a>
+                    <a href="#simbolos" class="hover:text-amber-400 transition">Símbolos de la Memoria</a>
+                    <a href="#cronologia" class="hover:text-amber-400 transition">Línea del Tiempo</a>
+                    <a href="#cultura" class="hover:text-amber-400 transition">Arte y Cultura</a>
+                    <a href="#muro" class="hover:text-amber-400 transition">Muro de Reflexiones</a>
+                </nav>
+
+                <!-- Menú Móvil -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-md text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none" aria-label="Abrir Menú">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menú Desplegable Móvil -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-2">
+            <a href="#historia" class="block px-3 py-2 rounded-md hover:bg-slate-800 text-slate-200">¿Por qué el 24M?</a>
+            <a href="#simbolos" class="block px-3 py-2 rounded-md hover:bg-slate-800 text-slate-200">Símbolos de la Memoria</a>
+            <a href="#cronologia" class="block px-3 py-2 rounded-md hover:bg-slate-800 text-slate-200">Línea del Tiempo</a>
+            <a href="#cultura" class="block px-3 py-2 rounded-md hover:bg-slate-800 text-slate-200">Arte y Cultura</a>
+            <a href="#muro" class="block px-3 py-2 rounded-md hover:bg-slate-800 text-slate-200">Muro de Reflexiones</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative memory-pattern text-white py-24 lg:py-32 overflow-hidden border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <!-- Emblema Pañuelo Blanco -->
+            <div class="inline-flex items-center justify-center p-4 mb-6 bg-slate-900/80 rounded-full border border-slate-700 backdrop-blur-sm shadow-2xl panuelo-glow">
+                <svg class="w-14 h-14 text-slate-100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 35 Q50 15 75 35 Q82 65 50 82 Q18 65 25 35 Z" fill="white" opacity="0.95"/>
+                    <path d="M35 52 Q50 62 65 52" stroke="#0f172a" stroke-width="3" fill="none"/>
+                </svg>
+            </div>
+
+            <span class="block text-sm sm:text-base text-amber-400 font-semibold tracking-widest uppercase mb-3">
+                Escuela de Educación Secundaria Técnica N°3
+            </span>
+
+            <h1 class="text-4xl sm:text-6xl font-serif font-extrabold tracking-tight leading-tight text-white mb-6">
+                24 de Marzo<br>
+                <span class="text-slate-300 font-normal italic text-2xl sm:text-4xl">Día Nacional de la Memoria por la Verdad y la Justicia</span>
+            </h1>
+
+            <p class="max-w-3xl mx-auto text-lg sm:text-xl text-slate-300 font-light leading-relaxed mb-10">
+                La comunidad de la Escuela Técnica N°3 se une en el ejercicio activo de la memoria colectiva, afirmando nuestro compromiso con los Derechos Humanos, la democracia y el valor innegociable de la Verdad y la Justicia.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#historia" class="w-full sm:w-auto px-8 py-3.5 bg-slate-100 hover:bg-white text-slate-950 font-semibold rounded-xl shadow-lg hover:shadow-xl transition text-center">
+                    Explorar la Historia
+                </a>
+                <a href="#muro" class="w-full sm:w-auto px-8 py-3.5 bg-slate-900 hover:bg-slate-800 text-white font-medium rounded-xl border border-slate-700 transition text-center">
+                    Dejar mi Reflexión
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CITA DESTACADA -->
+    <div class="bg-slate-900 text-slate-300 py-6 border-b border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 text-center font-serif italic text-base sm:text-lg">
+            "La memoria es un puente entre el pasado que nos marca y el futuro libre que elegimos construir."
+        </div>
+    </div>
+
+    <!-- SECCIÓN 1: ¿POR QUÉ RECORDAMOS EL 24 DE MARZO? -->
+    <section id="historia" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold tracking-widest text-slate-500 uppercase">Reseña e Historia</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mt-2">¿Por qué recordamos el 24 de marzo?</h2>
+                <div class="w-20 h-1 bg-slate-800 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-slate-700 leading-relaxed">
+                    <p class="text-lg font-medium text-slate-900">
+                        El 24 de marzo de 1976 se produjo en la Argentina un golpe de Estado cívico-militar que derrocó al gobierno constitucional e instauró una dictadura que se extendió hasta el 10 de diciembre de 1983.
+                    </p>
+                    <p>
+                        Durante este período, el Estado argentino desplegó un sistema clandestino de represión que violó de forma sistemática los derechos humanos más fundamentales: miles de personas fueron perseguidas, secuestradas, torturadas y desaparecidas.
+                    </p>
+                    <p>
+                        Recordar esta fecha no es habitar el pasado desde la amargura, sino asumir un compromiso ético con el presente: defender las libertades democráticas y garantizar que nunca más el Estado sea utilizado para vulnerar a su propio pueblo.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                        <div class="flex items-center space-x-4 mb-3">
+                            <div class="p-3 bg-slate-900 text-white rounded-xl">
+                                <i class="fa-solid fa-users text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900">Terrorismo de Estado</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            El uso ilegítimo de las fuerzas públicas, la creación de más de 700 Centros Clandestinos de Detención y la suspensión total de los derechos constitucionales.
+                        </p>
+                    </div>
+
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                        <div class="flex items-center space-x-4 mb-3">
+                            <div class="p-3 bg-slate-900 text-white rounded-xl">
+                                <i class="fa-solid fa-[#1e293b] fa-book-bookmark"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900">Cultura y Censura</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Se persiguió el pensamiento crítico, prohibiendo libros, canciones, expresiones artísticas y la actividad en centros de estudiantes y gremios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: SÍMBOLOS DE LA MEMORIA -->
+    <section id="simbolos" class="py-20 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold tracking-widest text-slate-500 uppercase">Emblemas de Lucha</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mt-2">Los Símbolos de la Memoria</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto mt-2">Símbolos nacidos del coraje, la dignidad y la búsqueda de paz.</p>
+                <div class="w-20 h-1 bg-slate-800 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pañuelos Blancos -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-slate-900 text-white rounded-xl flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-feather"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-slate-900 mb-3">Los Pañuelos Blancos</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm">
+                            Empezaron como los pañales de tela de sus hijos para identificarse entre la multitud en Plaza de Mayo. Hoy son el símbolo global de la resistencia pacífica y el amor maternal hecho lucha colectiva.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-slate-500">
+                        Madres y Abuelas de Plaza de Mayo
+                    </div>
+                </div>
+
+                <!-- Nunca Más -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-slate-900 text-white rounded-xl flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-slate-900 mb-3">NUNCA MÁS</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm">
+                            Consigna histórica enunciada por el fiscal Julio César Strassera al finalizar el Juicio a las Juntas en 1985. Expresa el pacto democrático definitivo de la sociedad argentina.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-slate-500">
+                        Pacto Social y Democrático
+                    </div>
+                </div>
+
+                <!-- Derecho a la Identidad -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-slate-900 text-white rounded-xl flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-fingerprint"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-slate-900 mb-3">Derecho a la Identidad</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm">
+                            La búsqueda incansable de los niños y niñas apropiados durante la dictadura. Un trabajo que unió la ciencia con la genética para restituir la verdad biológica y familiar.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-slate-500">
+                        Restituciones de Abuelas
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: CRONOLOGÍA INTERACTIVA -->
+    <section id="cronologia" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold tracking-widest text-slate-500 uppercase">Recorrido Temporal</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mt-2">Línea del Tiempo Histórica</h2>
+                <p class="text-slate-600 mt-2">Haz clic sobre cada evento para desplegar su historia.</p>
+                <div class="w-20 h-1 bg-slate-800 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Hito 1 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 transition hover:shadow-md cursor-pointer" onclick="toggleTimeline(this)">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-4">
+                            <span class="px-3 py-1 bg-slate-900 text-white rounded-md text-xs font-bold">24 Mar 1976</span>
+                            <h3 class="font-bold text-slate-900 text-base sm:text-lg">Golpe de Estado Cívico-Militar</h3>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-slate-500 transition-transform duration-300 icon-arrow"></i>
+                    </div>
+                    <div class="timeline-content hidden mt-4 pt-4 border-t border-slate-200 text-slate-600 text-sm leading-relaxed">
+                        Las Fuerzas Armadas derrocan al gobierno constitucional. Se inicia la etapa más oscura de la historia argentina reciente, caracterizada por la represión ilegal y la interrupción de la democracia.
+                    </div>
+                </div>
+
+                <!-- Hito 2 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 transition hover:shadow-md cursor-pointer" onclick="toggleTimeline(this)">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-4">
+                            <span class="px-3 py-1 bg-slate-900 text-white rounded-md text-xs font-bold">30 Abr 1977</span>
+                            <h3 class="font-bold text-slate-900 text-base sm:text-lg">Nace la Marcha en Plaza de Mayo</h3>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-slate-500 transition-transform duration-300 icon-arrow"></i>
+                    </div>
+                    <div class="timeline-content hidden mt-4 pt-4 border-t border-slate-200 text-slate-600 text-sm leading-relaxed">
+                        Un grupo de catorce madres se reúne por primera vez frente a la Casa de Gobierno para reclamar saber el paradero de sus hijos. Al no poder quedarse detenidas en grupo, comienzan a marchar en ronda.
+                    </div>
+                </div>
+
+                <!-- Hito 3 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 transition hover:shadow-md cursor-pointer" onclick="toggleTimeline(this)">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-4">
+                            <span class="px-3 py-1 bg-slate-900 text-white rounded-md text-xs font-bold">10 Dic 1983</span>
+                            <h3 class="font-bold text-slate-900 text-base sm:text-lg">Restauración de la Democracia</h3>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-slate-500 transition-transform duration-300 icon-arrow"></i>
+                    </div>
+                    <div class="timeline-content hidden mt-4 pt-4 border-t border-slate-200 text-slate-600 text-sm leading-relaxed">
+                        Asume Raúl Alfonsín tras elecciones libres, dando inicio al período democrático ininterrumpido más largo de la historia de nuestro país.
+                    </div>
+                </div>
+
+                <!-- Hito 4 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 transition hover:shadow-md cursor-pointer" onclick="toggleTimeline(this)">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-4">
+                            <span class="px-3 py-1 bg-slate-900 text-white rounded-md text-xs font-bold">Año 1985</span>
+                            <h3 class="font-bold text-slate-900 text-base sm:text-lg">Juicio a las Juntas Militares</h3>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-slate-500 transition-transform duration-300 icon-arrow"></i>
+                    </div>
+                    <div class="timeline-content hidden mt-4 pt-4 border-t border-slate-200 text-slate-600 text-sm leading-relaxed">
+                        Un tribunal civil juzga y condena a los máximos responsables de las juntas militares a partir de las pruebas recolectadas en el informe "Nunca Más" redactado por la CONADEP.
+                    </div>
+                </div>
+
+                <!-- Hito 5 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 transition hover:shadow-md cursor-pointer" onclick="toggleTimeline(this)">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-4">
+                            <span class="px-3 py-1 bg-slate-900 text-white rounded-md text-xs font-bold">Año 2002</span>
+                            <h3 class="font-bold text-slate-900 text-base sm:text-lg">Sanción de la Ley N° 25.633</h3>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-slate-500 transition-transform duration-300 icon-arrow"></i>
+                    </div>
+                    <div class="timeline-content hidden mt-4 pt-4 border-t border-slate-200 text-slate-600 text-sm leading-relaxed">
+                        Se instituye oficialmente el 24 de marzo como el "Día Nacional de la Memoria por la Verdad y la Justicia" para ser conmemorado en todos los establecimientos educativos y espacios públicos del país.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 4: ARTE, LITERATURA Y MÚSICA -->
+    <section id="cultura" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold tracking-widest text-slate-500 uppercase">Expresiones Culturales</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mt-2">Arte, Literatura y Música de la Memoria</h2>
+                <p class="text-slate-600 mt-2">Obras que desafiaron la censura y mantuvieron viva la esperanza.</p>
+                <div class="w-20 h-1 bg-slate-800 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Filtros -->
+            <div class="flex justify-center flex-wrap gap-2 mb-10">
+                <button onclick="filterCulture('todos')" class="culture-btn active-btn px-4 py-2 rounded-full text-xs font-semibold bg-slate-900 text-white transition">Todos</button>
+                <button onclick="filterCulture('musica')" class="culture-btn px-4 py-2 rounded-full text-xs font-semibold bg-white text-slate-700 hover:bg-slate-200 transition border border-slate-200">Música</button>
+                <button onclick="filterCulture('libros')" class="culture-btn px-4 py-2 rounded-full text-xs font-semibold bg-white text-slate-700 hover:bg-slate-200 transition border border-slate-200">Literatura</button>
+                <button onclick="filterCulture('cine')" class="culture-btn px-4 py-2 rounded-full text-xs font-semibold bg-white text-slate-700 hover:bg-slate-200 transition border border-slate-200">Cine</button>
+            </div>
+
+            <!-- Tarjetas Culturales -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="culture-grid">
+                <!-- Música 1 -->
+                <div class="culture-card musica bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm">
+                    <div>
+                        <span class="px-2.5 py-1 bg-amber-100 text-amber-900 rounded-md text-xs font-bold">Música</span>
+                        <h3 class="font-serif font-bold text-lg text-slate-900 mt-3">Los Dinosaurios</h3>
+                        <p class="text-xs text-slate-500">Charly García (1983)</p>
+                        <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+                            Obra maestra que utilizó la metáfora para nombrar lo que la censura pretendía ocultar: "Los que están en el aire pueden desaparecer... pero los dinosaurios van a desaparecer".
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Literatura 1 -->
+                <div class="culture-card libros bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm">
+                    <div>
+                        <span class="px-2.5 py-1 bg-rose-100 text-rose-900 rounded-md text-xs font-bold">Literatura</span>
+                        <h3 class="font-serif font-bold text-lg text-slate-900 mt-3">Un elefante ocupa mucho espacio</h3>
+                        <p class="text-xs text-slate-500">Elsa Bornemann (1975)</p>
+                        <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+                            Libro de cuentos infantiles censurado bajo el Decreto N° 3155/77 por considerarse una alegoría sobre la libertad y la organización colectiva.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cine 1 -->
+                <div class="culture-card cine bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm">
+                    <div>
+                        <span class="px-2.5 py-1 bg-sky-100 text-sky-900 rounded-md text-xs font-bold">Cine</span>
+                        <h3 class="font-serif font-bold text-lg text-slate-900 mt-3">Argentina, 1985</h3>
+                        <p class="text-xs text-slate-500">Dir. Santiago Mitre (2022)</p>
+                        <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+                            Relato cinematográfico sobre la valentía del equipo fiscal que llevó a juicio a los mandos militares en un país que recién recuperaba la libertad.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Música 2 -->
+                <div class="culture-card musica bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm">
+                    <div>
+                        <span class="px-2.5 py-1 bg-amber-100 text-amber-900 rounded-md text-xs font-bold">Música</span>
+                        <h3 class="font-serif font-bold text-lg text-slate-900 mt-3">Solo le pido a Dios</h3>
+                        <p class="text-xs text-slate-500">León Gieco (1978)</p>
+                        <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+                            Plegaria pacifista convertida en himno popular contra la indiferencia, las guerras y la opresión.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Literatura 2 -->
+                <div class="culture-card libros bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm">
+                    <div>
+                        <span class="px-2.5 py-1 bg-rose-100 text-rose-900 rounded-md text-xs font-bold">Literatura</span>
+                        <h3 class="font-serif font-bold text-lg text-slate-900 mt-3">Carta Abierta a la Junta Militar</h3>
+                        <p class="text-xs text-slate-500">Rodolfo Walsh (1977)</p>
+                        <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+                            Texto fundamental del periodismo de investigación que denunció el plan represivo y económico a un año del golpe de Estado.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cine 2 -->
+                <div class="culture-card cine bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm">
+                    <div>
+                        <span class="px-2.5 py-1 bg-sky-100 text-sky-900 rounded-md text-xs font-bold">Cine</span>
+                        <h3 class="font-serif font-bold text-lg text-slate-900 mt-3">La Historia Oficial</h3>
+                        <p class="text-xs text-slate-500">Dir. Luis Puenzo (1985)</p>
+                        <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+                            Película argentina ganadora del Oscar que expone la búsqueda de la verdad sobre los hijos apropiados durante la dictadura.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5: MURO DIGITAL DE REFLEXIONES PARTICIPATIVO -->
+    <section id="muro" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold tracking-widest text-slate-500 uppercase">Espacio Participativo</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mt-2">Muro Digital de la E.E.S.T. N°3</h2>
+                <p class="text-slate-600 mt-2">Sumá tu palabra o reflexión para construir memoria colectiva.</p>
+                <div class="w-20 h-1 bg-slate-800 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Formulario de Publicación -->
+            <div class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 mb-12">
+                <form id="reflexion-form" onsubmit="agregarReflexion(event)" class="space-y-4">
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Nombre / Curso / Rol</label>
+                            <input type="text" id="nombre-input" required placeholder="Ej: Sofía (5° Año) / Prof. Gómez" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-slate-800">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Palabra Clave</label>
+                            <input type="text" id="tag-input" placeholder="Ej: Libertad, Respeto, Nunca Más" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-slate-800">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Tu Mensaje o Reflexión</label>
+                        <textarea id="mensaje-input" required rows="3" placeholder="¿Qué significa para vos el 24 de marzo?" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-slate-800"></textarea>
+                    </div>
+                    <button type="submit" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white font-medium rounded-xl text-sm transition shadow-md">
+                        Publicar en el Muro
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contenedor del Muro de Reflexiones -->
+            <div class="grid md:grid-cols-2 gap-6" id="muro-container">
+                <!-- Mensaje Preexistente 1 -->
+                <div class="bg-slate-900 text-white p-6 rounded-2xl shadow-sm border border-slate-800 flex flex-col justify-between">
+                    <p class="font-serif italic text-sm text-slate-200 leading-relaxed mb-4">
+                        "Recordar el 24 de marzo en la escuela es entender que la democracia no es solo votar, es defender el derecho a pensar distinto sin miedo."
+                    </p>
+                    <div class="flex justify-between items-center text-xs text-slate-400 border-t border-slate-800 pt-3">
+                        <span class="font-semibold text-amber-400">Comunidad E.E.S.T. N°3</span>
+                        <span>#NuncaMás</span>
+                    </div>
+                </div>
+
+                <!-- Mensaje Preexistente 2 -->
+                <div class="bg-slate-900 text-white p-6 rounded-2xl shadow-sm border border-slate-800 flex flex-col justify-between">
+                    <p class="font-serif italic text-sm text-slate-200 leading-relaxed mb-4">
+                        "La memoria es la luz que nos cuida del olvido y de repetir los peores momentos de nuestra historia."
+                    </p>
+                    <div class="flex justify-between items-center text-xs text-slate-400 border-t border-slate-800 pt-3">
+                        <span class="font-semibold text-amber-400">Estudiantes de la E.E.S.T. N°3</span>
+                        <span>#MemoriaVerdadYJusticia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / PIE DE PÁGINA INSTITUCIONAL -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 items-center text-center md:text-left">
+                <div>
+                    <h4 class="text-white font-bold text-lg">E.E.S.T. N°3</h4>
+                    <p class="text-xs text-slate-400 mt-1">Escuela de Educación Secundaria Técnica N°3</p>
+                </div>
+
+                <div class="text-center">
+                    <span class="block font-serif text-amber-400 font-bold text-xl">MEMORIA • VERDAD • JUSTICIA</span>
+                </div>
+
+                <div class="md:text-right">
+                    <p class="text-xs text-slate-500">
+                        Espacio de Conmemoración Educativa<br>
+                        24 de Marzo — Día Nacional de la Memoria
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-slate-900 text-center text-xs text-slate-600">
+                Escuela de Educación Secundaria Técnica N°3
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Volver Arriba -->
+    <button id="back-to-top" onclick="scrollToTop()" class="fixed bottom-6 right-6 z-50 p-3 bg-slate-900 text-white rounded-full shadow-xl border border-slate-700 opacity-0 pointer-events-none transition-all duration-300 hover:bg-slate-800" aria-label="Volver Arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // 1. Menú Móvil
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // 2. Línea del Tiempo Acordeón
+        function toggleTimeline(element) {
+            const content = element.querySelector('.timeline-content');
+            const arrow = element.querySelector('.icon-arrow');
+
+            const isHidden = content.classList.contains('hidden');
+
+            document.querySelectorAll('.timeline-content').forEach(item => item.classList.add('hidden'));
+            document.querySelectorAll('.icon-arrow').forEach(icon => icon.classList.remove('rotate-180'));
+
+            if (isHidden) {
+                content.classList.remove('hidden');
+                arrow.classList.add('rotate-180');
+            }
+        }
+
+        // 3. Filtro Cultural
+        function filterCulture(category) {
+            const cards = document.querySelectorAll('.culture-card');
+            const buttons = document.querySelectorAll('.culture-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-slate-900', 'text-white');
+                btn.classList.add('bg-white', 'text-slate-700');
+            });
+
+            event.currentTarget.classList.remove('bg-white', 'text-slate-700');
+            event.currentTarget.classList.add('bg-slate-900', 'text-white');
+
+            cards.forEach(card => {
+                if (category === 'todos' || card.classList.contains(category)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // 4. Muro de Reflexiones Dinámico
+        function agregarReflexion(e) {
+            e.preventDefault();
+
+            const nombre = document.getElementById('nombre-input').value;
+            const tag = document.getElementById('tag-input').value || 'Memoria';
+            const mensaje = document.getElementById('mensaje-input').value;
+
+            const container = document.getElementById('muro-container');
+
+            const nuevaCard = document.createElement('div');
+            nuevaCard.className = "bg-slate-900 text-white p-6 rounded-2xl shadow-md border border-slate-800 flex flex-col justify-between animate-fade-in";
+            nuevaCard.innerHTML = `
+                <p class="font-serif italic text-sm text-slate-200 leading-relaxed mb-4">
+                    "${mensaje}"
+                </p>
+                <div class="flex justify-between items-center text-xs text-slate-400 border-t border-slate-800 pt-3">
+                    <span class="font-semibold text-amber-400">${nombre}</span>
+                    <span>#${tag.replace(/\s+/g, '')}</span>
+                </div>
+            `;
+
+            container.prepend(nuevaCard);
+
+            document.getElementById('reflexion-form').reset();
+        }
+
+        // 5. Botón Arriba
+        const backToTopBtn = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
